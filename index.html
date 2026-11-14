@@ -4,12 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Compliance support for research analysts.">
 
     <title>Compliance Support</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="style.css">
@@ -17,15 +17,24 @@
 
 <body>
 
+    <!-- Navigation -->
     <header class="navbar">
+
         <a href="#home" class="logo">
-            <span class="logo-mark">✓</span>
+            <svg viewBox="0 0 40 40" aria-hidden="true">
+                <circle cx="16" cy="16" r="10"
+                    fill="none" stroke="currentColor" stroke-width="3"/>
+                <path d="M23 23 L34 34"
+                    fill="none" stroke="currentColor"
+                    stroke-width="3" stroke-linecap="round"/>
+            </svg>
             <span>Logo</span>
         </a>
 
         <input type="checkbox" id="menu-toggle">
 
-        <label for="menu-toggle" class="menu-icon">
+        <label for="menu-toggle" class="menu-icon"
+               aria-label="Open navigation menu">
             <span></span>
             <span></span>
             <span></span>
@@ -33,25 +42,24 @@
 
         <nav class="nav-links">
             <a href="#home">Home</a>
-            <a href="#about">About Us</a>
+            <a href="#services">About Us</a>
             <a href="#services">Our Services</a>
-            <a href="#pricing">Pricing</a>
-            <a href="#faq">FAQ</a>
+            <a href="#services">Pricing</a>
+            <a href="#services">FAQ</a>
             <a href="#contact">Contact</a>
         </nav>
 
-        <a href="#contact" class="contact-btn">Contact Us</a>
+        <a href="#contact" class="contact-btn">☎ Contact Us</a>
+
     </header>
+
 
     <main>
 
-        <!-- First hero section -->
-
+        <!-- Hero Section -->
         <section class="hero" id="home">
 
             <div class="hero-content">
-
-                <span class="eyebrow">COMPLIANCE MADE SIMPLER</span>
 
                 <h1>
                     Simplifying
@@ -59,106 +67,134 @@
                     Research Analysts
                 </h1>
 
-                <p>
-                    Stay focused on your insights — we'll handle the compliance.
-                    Our compliance support helps research analysts understand
-                    regulatory requirements and manage related processes.
+                <p class="hero-description">
+                    Stay Focused On Your Insights—We'll Handle The
+                    Compliance. Our Expert Solutions Ensure Your
+                    Research Practices Meet Every Regulatory
+                    Requirement With Confidence And Ease.
                 </p>
 
                 <ul class="hero-list">
-                    <li>End-to-End Compliance Support</li>
+                    <li>End-To-End Compliance Support</li>
                     <li>Regulatory Filings Made Simple</li>
                     <li>Tailored Solutions For Independent Analysts &amp; Firms</li>
                 </ul>
 
                 <div class="hero-buttons">
                     <a href="#services" class="primary-btn">Get Started</a>
-                    <a href="#contact" class="secondary-btn">Book A Consultation</a>
-                </div>
-
-                <div class="trust-info">
-                    <div>
-                        <strong>4.8</strong>
-                        <span>Client Rating</span>
-                    </div>
-
-                    <div>
-                        <strong>250+</strong>
-                        <span>Professionals</span>
-                    </div>
+                    <a href="#contact" class="secondary-btn">
+                        Book A Consultation
+                    </a>
                 </div>
 
             </div>
 
+
             <div class="hero-image">
-                <img src="hero-illustration.png"
+
+                <img src="assets/hero-illustration.png"
                      alt="Research analyst illustration">
+
+                <div class="rating-badge">
+                    <strong>4.8</strong>
+                    <div>
+                        <span class="stars">★★★★★</span>
+                        <small>Clients Rating</small>
+                    </div>
+                </div>
+
+                <div class="trusted-badge">
+                    <span class="briefcase">▣</span>
+                    <div>
+                        <small>Trusted By</small>
+                        <strong>250+</strong>
+                        <small>Professionals</small>
+                    </div>
+                </div>
+
             </div>
 
         </section>
 
 
-        <!-- Second hero section -->
-
-        <section class="compliance section" id="services">
+        <!-- Compliance Section -->
+        <section class="compliance" id="services">
 
             <div class="section-heading">
 
-                <div>
-                    <span class="eyebrow">WHY COMPLIANCE MATTERS</span>
-                    <h2>Why Compliance Matters<br>For Research Analysts</h2>
-                </div>
+                <h2>
+                    Why Compliance Matters
+                    <br>
+                    For Research Analysts
+                </h2>
 
                 <p>
-                    Compliance helps research analysts maintain transparency,
-                    follow regulatory requirements and build trust.
+                    In Today's Regulatory Environment, Even A Small
+                    Oversight Can Lead To Penalties, Reputational Risks,
+                    And Loss Of Client Trust. We Help Research Analysts
+                    And Firms Navigate Complex Compliance Requirements
+                    So They Can Focus On Delivering High-Quality
+                    Research Without Worry.
                 </p>
 
             </div>
 
+
             <div class="compliance-content">
 
                 <div class="compliance-image">
-                    <img src="compliance-illustration.png"
-                         alt="Compliance and research illustration">
+                    <img src="assets/compliance-illustration.png"
+                         alt="Research analyst reviewing compliance data">
                 </div>
+
 
                 <div class="features">
 
                     <article class="feature">
-                        <span class="feature-number">01</span>
+
+                        <div class="feature-icon">⌕</div>
 
                         <div>
                             <h3>Regulatory Clarity</h3>
+
                             <p>
-                                Understand complex compliance rules through
-                                clear and actionable guidance.
+                                We Decode Complex Compliance Rules
+                                Into Simple, Actionable Steps.
                             </p>
                         </div>
+
                     </article>
 
+
                     <article class="feature">
-                        <span class="feature-number">02</span>
+
+                        <div class="feature-icon">▣</div>
 
                         <div>
-                            <h3>Hassle-Free Filings</h3>
+                            <h3>Hassle-Free Filings Clarity</h3>
+
                             <p>
-                                Get support with documentation and
-                                filing-related processes.
+                                From Registration To Ongoing
+                                Reporting—We Manage It End To End.
                             </p>
                         </div>
+
                     </article>
 
+
                     <article class="feature">
-                        <span class="feature-number">03</span>
+
+                        <div class="feature-icon">⬡</div>
 
                         <div>
                             <h3>Risk Protection</h3>
+
                             <p>
-                                Identify compliance gaps and understand
-                                the importance of regulatory requirements.
+                                Stay Ahead Of Audits, Inspections,
+                                And Compliance Gaps With Proactive Support.
                             </p>
                         </div>
+
                     </article>
 
                 </div>
@@ -166,6 +202,10 @@
             </div>
 
         </section>
+
+
+        <!-- Contact Anchor -->
+        <div id="contact"></div>
 
     </main>
 
