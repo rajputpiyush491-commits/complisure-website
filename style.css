@@ -112,13 +112,12 @@ img {
 ========================= */
 
 .hero {
-    width: 100%;
     max-width: 1440px;
-    min-height: 435px;
-    margin: 0 auto;
-    padding: 45px 7% 40px;
+    min-height: 500px;
+    margin: auto;
+    padding: 45px 7% 35px;
     display: grid;
-    grid-template-columns: 1.05fr 0.95fr;
+    grid-template-columns: 1.1fr 0.9fr;
     align-items: center;
     gap: 35px;
 }
@@ -220,9 +219,8 @@ img {
 ========================= */
 
 .hero-image {
-    width: 100%;
     min-width: 0;
-    min-height: 380px;
+    min-height: 420px;
     position: relative;
     display: flex;
     justify-content: center;
@@ -231,7 +229,7 @@ img {
 
 .hero-image > img {
     width: 100%;
-    max-width: 490px;
+    max-width: 450px;
     height: auto;
     object-fit: contain;
 }
